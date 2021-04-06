@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fa/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assets/fa/css/solid.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>editor</title>
+</head>
+<body>
+    <div id="editor">
+        <div id="toolbar">
+            <table id="toolbar-bg">
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+            </table>
+            <div id="toolbar-sections">
+                <div class="toolbar-section br">
+                    <span id="bold"><i class="fas fa-bold"></i></span>
+                    <span id="italic"><i class="fas fa-italic"></i></span>
+                    <span id="underline"><i class="fas fa-underline"></i></span>
+                    <span id="strikethrough"><i class="fas fa-strikethrough"></i></span>    
+                </div>
+                <div class="toolbar-section">
+                    <div id="font">
+                        <select name="font" id="select-font">
+                            <option value="Arial">Arial</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Lato">Lato</option>
+                            <option value="Noto Sans">Noto Sans</option>
+                            <option value="Courier">Courier</option>
+                            <option value="Menlo">Menlo</option>
+                        </select>
+                    </div>
+                    <div id="font-size">
+                        <select name="font-size" id="select-font-size">
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                        </select>
+                    </div>
+                    <div id="blocks">
+                        <select name="blocks" id="select-block">
+                            <option value="normal">normal text</option>
+                            <option value="h1"><h1>Heading 1</h1></option>
+                            <option value="h2"><h2>Heading 2</h2></option>
+                            <option value="h3"><h3>Heading 3</h3></option>
+                            <option value="h4"><h4>Heading 4</h4></option>
+                            <option value="h5"><h5>Heading 5</h5></option>
+                            <option value="h6"><h6>Heading 6</h6></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="toolbar-section br">
+                    <span id="left-align"><i class="fas fa-align-left"></i></span>
+                    <span id="center-align"><i class="fas fa-align-center"></i></span>
+                    <span id="right-align"><i class="fas fa-align-right"></i></span>
+                    <span id="justify-align"><i class="fas fa-align-justify"></i></span>
+                </div>
+                <div class="toolbar-section">
+                    <span id="ordered-list"><i class="fas fa-list-ol"></i></span>
+                        <!-- <div id="select-ol">
+                            <span value="1">1</span>
+                            <span value="A">A</span>
+                            <span value="a">a</span>
+                            <span value="I">I</span>
+                            <span value="i">i</span>
+                        </div> -->
+                    <span id="unordered-list"><i class="fas fa-list-ul"></i></span>
+                    <span id="check-list"><i class="fas fa-tasks"></i></span>
+                </div>
+                <div class="toolbar-section">
+                    <span id="text-color"><i class="fas fa-font"></i></span>
+                    <span id="background-color"><i class="fas fa-fill"></i></span>
+                    <span id="text-case"><i class="fas fa-text-height"></i></span>
+                </div>
+                <div class="toolbar-section">
+                    <span id="image"></span>
+                    <span id="media"></span>
+                    <span id="link"></span>
+                </div>
+            </div>
+        </div>
+        <div id="writing-area" contenteditable></div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* margin-top: 10%; */
+}
+
+#editor {
+    width: 500px;
+    height: 500px;
+}
+
+#toolbar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#toolbar-bg {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#toolbar-bg tbody {
+    width: 100%;
+}
+
+#toolbar-bg td {
+    width: 100%;
+    height: 34px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#toolbar-sections {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toolbar-section {
+    flex: 0 0 auto;
+    height: 100%;
+}
+
+.toolbar-section.br {
+    border-right: 1px solid black;
+}
+
+.toolbar-section span {
+    margin: 3px;
+    display: inline-block;
+    padding: 5px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+}
+
+.toolbar-section div {
+    display: inline-block;
+    border-right: 1px solid black;
+}
+
+.toolbar-section div select {
+    margin: 3px;
+    border: none;
+    outline: none;
+    /* background-color: lightgrey; */
+    padding: 6px;
+}
+
+.toolbar-section span:hover {
+    opacity: 0.6;
+    background-color: grey;
+}
+
+
+#writing-area {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+}
+
